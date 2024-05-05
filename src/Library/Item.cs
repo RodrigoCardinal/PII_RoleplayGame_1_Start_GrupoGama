@@ -1,15 +1,20 @@
-using System;
-
-namespace Roleplay1
+namespace Program
 {
     public class Item
     {
-        public void Items (string name, int damage, int defense)
+
+        public string Name {get;set;}
+        public int Damage {get;set;}
+        public int Defense {get;set;}
+        public string Type {get;set;}
+        public Item(string name, int damage, int defense, string type)
         {
-            
-            string Name = name;
-            int Damage = damage;
-            int Defense = defense; 
-        }   
+
+            this.Name = name;
+            this.Damage = damage;
+            this.Defense = defense;
+            this.Type = type;
+
+        }
     }
 }
