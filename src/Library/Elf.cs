@@ -5,8 +5,8 @@ namespace Program
     public class Elf : ICharacter
     {
         private string name;
-        private int InitialHealth;
-        private int Health;
+        private int initialHealth;
+        private int health;
         private Dictionary<string, Item> items;
 
         public int Health
